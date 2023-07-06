@@ -8,9 +8,7 @@ namespace SistemaDeTarefas.Data
     {
         public SistemadeTarefasDBContext(DbContextOptions<SistemadeTarefasDBContext> options)
             : base(options)
-        {
-
-        }
+        {}
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
         public DbSet<TarefaModel> Tarefa { get; set; }
